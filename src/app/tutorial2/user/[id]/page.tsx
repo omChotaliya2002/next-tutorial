@@ -1,10 +1,18 @@
 // USER ID PAGE : (DYNAMIC ROUTE PAGE) : 
 
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
-export default function UserDetails({params} : {params : {id : string}}) {
+interface Type { 
+    id : string;
+}
+
+export default function UserDetails() {
+
+    const params = useParams();
+    const id = typeof params.id === "string" ? params.id : params.id?.[0]  // checks if params.id is string or array of string👍
  
-    const id = decodeURIComponent(params.id);
+    // const id = decodeURIComponent(params.id);
 
     return(
 <>
