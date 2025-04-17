@@ -19,7 +19,7 @@ export default function User() {
                 {
                     name.map((username : string)=> (    // wrap the map function in additional () when it spans multiple values
 
-                      <li className="hover:underline hover:underline-offset-4" key={username}> <Link href={`/tutorial2/user/${encodeURIComponent(username)}`}> {username} </Link> </li>
+                      <li className="hover:underline hover:underline-offset-4 text-lg" key={username}> <Link href={`/tutorial2/user/${encodeURIComponent(username)}`}> {username} </Link> </li>
                     
                    ))}
                  </ul>

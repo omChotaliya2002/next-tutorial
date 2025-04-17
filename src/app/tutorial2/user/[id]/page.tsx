@@ -1,3 +1,5 @@
+"use client";
+
 // USER ID PAGE : (DYNAMIC ROUTE PAGE) : 
 
 import Link from "next/link";
