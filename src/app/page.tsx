@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "./globals.css"
 
 export default function Home() {
 
@@ -27,14 +28,14 @@ export default function Home() {
           </div>
 
           <div className="t3 mt-[30px]">
-              <Link href={"/"}> 
+              <Link href={"/tutorial3"}> 
                   <button className="w-[100px] h-[40px] font-semibold text-lg text-black rounded-md bg-white hover:bg-black hover:text-white hover:ring-2 hover:ring-white active:bg-slate-600 hover:cursor-pointer"> 
                       Tutorial-3 </button>
               </Link>
           </div>
 
           <div className="t4 mt-[30px]">
-              <Link href={"/"}> 
+              <Link href={"/tutorial4"}> 
                   <button className="w-[100px] h-[40px] font-semibold text-lg text-black rounded-md bg-white hover:bg-black hover:text-white hover:ring-2 hover:ring-white active:bg-slate-600 hover:cursor-pointer"> 
                       Tutorial-4 </button>
               </Link>

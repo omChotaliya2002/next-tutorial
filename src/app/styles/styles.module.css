@@ -1,0 +1,12 @@
+.red{
+    color: rgb(255, 169, 169);
+}
+
+.green{
+    color: greenyellow;
+}
+
+#company{
+    color: cadetblue;
+    font-weight: bold;
+}

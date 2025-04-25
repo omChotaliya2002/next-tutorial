@@ -12,7 +12,7 @@ interface Type {
 export default function UserDetails() {
 
     const params = useParams();
-    const id = typeof params.id === "string" ? params.id : params.id?.[0]  // checks if params.id is string or array of string👍
+    const id = typeof params.id === "string" ? params.id : params.id?.[0];  // checks if params.id is string or array of string👍
  
     // const id = decodeURIComponent(params.id);
 
@@ -21,7 +21,7 @@ export default function UserDetails() {
         <div className="mt-[50px]"> 
 
             <h1 className="text-center underline underline-offset-4 text-xl font-semibold"> Student Details :  </h1>
-            <p className="mt-[20px]"> <b> User Name : </b> {id}</p>
+            <p className="mt-[20px]"> <b> Student Name : </b> {id}</p>
 
         </div>
 
