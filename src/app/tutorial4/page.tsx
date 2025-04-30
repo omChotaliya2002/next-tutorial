@@ -6,6 +6,7 @@ import other from "@/app/other.module.css";
 import outside from "@/app/styles/outside.module.css";
 import styles from "@/app/styles/styles.module.css";
 import { useState } from 'react';
+import Link from 'next/link';
 
 const page = () => {
 
@@ -49,10 +50,35 @@ const page = () => {
 
             <h1 className={red}> We are using const variable "red" for easy styling </h1>
             <h1 className={red}> We are using const variable "red" for easy styling </h1>
-            <h1 className={red}> We are using const variable "red" for easy styling </h1>
-            <h1 className={red}> We are using const variable "red" for easy styling </h1>
             <h1 className={red} style={{marginBottom:"100px"}}> We are using const variable "red" for easy styling </h1>
 
+
+        <div className='flex items-center justify-center space-x-12'>
+                <Link href={"/tutorial4/image"}>
+                <button className='w-[200px] h-[40px] font-semibold bg-white text-black text-[16px] rounded-xl ring-2 ring-white hover:cursor-pointer hover:bg-black hover:text-white transition-all delay-75'>
+                         Image Optimization </button>
+                </Link>
+
+                <Link href={"/tutorial4/font"}>
+                    <button className='w-[200px] h-[40px] font-semibold bg-white text-black text-[16px] rounded-xl ring-2 ring-white hover:cursor-pointer hover:bg-black hover:text-white transition-all delay-75'>
+                        Font Optimization </button>
+                </Link>
+        </div>
+
+        <div className='mb-[100px] mt-[20px] space-x-12'>
+
+             <Link href={"/tutorial4/metadata"}>
+                    <button className='w-[200px] h-[40px] font-semibold bg-white text-black text-[16px] rounded-xl ring-2 ring-white hover:cursor-pointer hover:bg-black hover:text-white transition-all delay-75'>
+                    Dynamic metadata </button>
+            </Link>
+
+            <Link href={"/tutorial4/userdetailes"}>
+                    <button className='w-[200px] h-[40px] font-semibold bg-white text-black text-[16px] rounded-xl ring-2 ring-white hover:cursor-pointer hover:bg-black hover:text-white transition-all delay-75'>
+                      Next script elem. </button>
+            </Link>
+
+
+        </div>
             
     </div>
     </>
