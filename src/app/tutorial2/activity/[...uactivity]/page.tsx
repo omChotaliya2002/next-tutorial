@@ -1,5 +1,5 @@
 
-interface Props {
+type Props = {
     params  : {
         uactivity : string[];
     };
