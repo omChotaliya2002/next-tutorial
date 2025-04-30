@@ -1,5 +1,5 @@
 
-interface PageProps {
+interface Props {
     params  : {
         uactivity : string[];
     };
@@ -7,7 +7,7 @@ interface PageProps {
 
 
 
-export default function UserActivity ({params} : PageProps) {
+export default function Page ({params} : Props) {
 
     // console.log("params are : ",params);
 
