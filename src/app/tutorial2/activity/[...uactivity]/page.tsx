@@ -1,7 +1,7 @@
 
 type Props = {
     params  : {
-        uactivity : string[];
+        uactivity : any[];
     };
 }
 
