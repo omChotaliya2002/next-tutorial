@@ -1,6 +1,6 @@
 "use client";
 
-interface props {
+interface PageProps {
     params  : {
         uactivity : string[];
     };
@@ -8,7 +8,7 @@ interface props {
 
 
 
-export default function UserActivity ({params} : props) {
+export default function UserActivity ({params} : PageProps) {
 
     // console.log("params are : ",params);
 
@@ -18,25 +18,29 @@ export default function UserActivity ({params} : props) {
 
     <>
 
-    <div className="mt-[20px]">
+<div className="mt-[20px]">
 
-        <table className="text-center" style={{border:"1px solid white"}}>
+    <table className="text-center" style={{border:"1px solid white"}}>
 
-            <tr>
-                <th className="w-[120px] h-[35px]" style={{border:"1px solid white"}}><b> User name </b></th>
-                <th className="w-[120px] h-[35px]" style={{border:"1px solid white"}}><b> Activity </b></th>
-            </tr>
+            <thead>
+                    <tr>
+                        <th className="w-[120px] h-[35px]" style={{border:"1px solid white"}}><b> User name </b></th>
+                        <th className="w-[120px] h-[35px]" style={{border:"1px solid white"}}><b> Activity </b></th>
+                    </tr>
+            </thead>
+
 
             {/* {
                 activity.map((_,index)=> )
             } */}
 
-            {/* <tr>
-                <td style={{border:"1px solid white"}}> {activity[0]} </td>
-                <td style={{border:"1px solid white"}}> {activity[1]} </td>
-            </tr> */}
-
-        </table>
+        <tbody>
+                <tr>
+                    <td style={{border:"1px solid white"}}> {activity[0]} </td>
+                    <td style={{border:"1px solid white"}}> {activity[1]} </td>
+                </tr>
+        </tbody>
+  </table>
 
             
             
